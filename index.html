@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Rally — Early Access</title>
-<meta name="description" content="Rally is building AI swing analysis, calibrated by a real coach. Join the list — the files reach you first." />
+<title>Rally AI — The Founding 10</title>
+<meta name="description" content="One swing. One score. One fix. Ten founding spots before Rally AI goes public — the app now, a year of Pro at launch, and your swings personally reviewed by the coach who built it." />
 <link rel="stylesheet" href="https://use.typekit.net/ftn2gsq.css">
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -62,33 +62,125 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 48px 0;
+  padding: 40px 0;
 }
 
-.mark svg { width: min(46vw, 210px); height: auto; }
+.mark svg { width: min(40vw, 180px); height: auto; }
 
 h1 {
-  margin-top: 34px;
+  margin-top: 30px;
   font-family: "acumin-pro", sans-serif;
   font-weight: 700;
-  font-size: clamp(38px, 11vw, 54px);
+  font-size: clamp(36px, 10.5vw, 52px);
   line-height: 1.05;
   letter-spacing: -0.015em;
   color: #F5F2EA;
 }
 h1 .accent { color: #D9CDA9; }
 
+.counter {
+  margin: 20px auto 0 auto;
+  display: inline-block;
+  border: 2px solid rgba(217,205,169,0.7);
+  border-radius: 999px;
+  padding: 9px 22px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.32em;
+  text-indent: 0.32em;
+  color: #D9CDA9;
+}
+
 .sub {
   margin: 22px auto 0 auto;
-  max-width: 400px;
+  max-width: 420px;
   font-weight: 400;
   font-size: 17px;
   line-height: 1.55;
   color: #A6A199;
 }
+.sub b { color: #F5F2EA; font-weight: 600; }
+
+/* ---------- what $99 buys ---------- */
+.buys {
+  margin: 30px auto 0 auto;
+  max-width: 420px;
+  text-align: left;
+  border: 1px solid #2B2B27;
+  border-radius: 16px;
+  padding: 20px 22px;
+  background: rgba(14,14,12,0.55);
+}
+.buys .price {
+  text-align: center;
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #F5F2EA;
+  margin-bottom: 4px;
+}
+.buys .price small { font-size: 14px; font-weight: 600; color: #6E6A62; letter-spacing: 0.14em; }
+.buys ul { list-style: none; margin-top: 12px; }
+.buys li {
+  position: relative;
+  padding: 7px 0 7px 26px;
+  font-size: 15.5px;
+  line-height: 1.45;
+  color: #CFC9BD;
+}
+.buys li::before {
+  content: "";
+  position: absolute;
+  left: 2px; top: 14px;
+  width: 9px; height: 9px;
+  background: #D9CDA9;
+}
+.buys li b { color: #F5F2EA; font-weight: 600; }
+
+/* ---------- CTAs ---------- */
+.ctas { margin-top: 30px; display: flex; flex-direction: column; gap: 14px; }
+.btn {
+  display: block;
+  width: 100%;
+  border-radius: 999px;
+  padding: 17px 26px;
+  font-family: "source-sans-3", sans-serif;
+  font-weight: 600;
+  font-size: 15.5px;
+  letter-spacing: 0.2em;
+  text-indent: 0.2em;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+.btn-dm {
+  background: #D9CDA9;
+  border: 2px solid #D9CDA9;
+  color: #0B0B0A;
+}
+.btn-venmo {
+  background: transparent;
+  border: 2px solid #3B3B36;
+  color: #F5F2EA;
+}
+.btn-venmo:active, .btn-dm:active { transform: scale(0.99); }
+.ctanote {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #6E6A62;
+}
+.ctanote b { color: #A6A199; font-weight: 600; }
 
 /* ---------- form ---------- */
-form { margin-top: 38px; }
+form { margin-top: 34px; }
+.formhead {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  color: #6E6A62;
+  margin-bottom: 14px;
+}
 .fieldwrap {
   display: flex;
   flex-direction: column;
@@ -99,7 +191,7 @@ input[type=email] {
   background: rgba(14,14,12,0.85);
   border: 2px solid #3B3B36;
   border-radius: 999px;
-  padding: 17px 26px;
+  padding: 16px 26px;
   font-family: "source-sans-3", sans-serif;
   font-size: 17px;
   color: #F5F2EA;
@@ -110,16 +202,16 @@ input[type=email]::placeholder { color: #6E6A62; letter-spacing: 0.04em; }
 input[type=email]:focus { border-color: #D9CDA9; }
 button {
   width: 100%;
-  background: #D9CDA9;
+  background: transparent;
   border: 2px solid #D9CDA9;
   border-radius: 999px;
-  padding: 17px 26px;
+  padding: 15px 26px;
   font-family: "source-sans-3", sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14.5px;
   letter-spacing: 0.24em;
   text-indent: 0.24em;
-  color: #0B0B0A;
+  color: #D9CDA9;
   cursor: pointer;
 }
 button:active { transform: scale(0.99); }
@@ -127,13 +219,14 @@ button[disabled] { opacity: 0.6; cursor: default; }
 
 .fineprint {
   margin-top: 18px;
-  font-size: 13.5px;
+  font-size: 13px;
+  line-height: 1.55;
   letter-spacing: 0.02em;
   color: #6E6A62;
 }
 
 /* success state */
-.success { display: none; margin-top: 38px; }
+.success { display: none; margin-top: 34px; }
 .success .stamp {
   display: inline-block;
   transform: rotate(-6deg);
@@ -141,9 +234,9 @@ button[disabled] { opacity: 0.6; cursor: default; }
   border-radius: 6px;
   padding: 12px 24px;
   font-weight: 600;
-  font-size: 20px;
-  letter-spacing: 0.42em;
-  text-indent: 0.42em;
+  font-size: 18px;
+  letter-spacing: 0.38em;
+  text-indent: 0.38em;
   color: rgba(217,205,169,0.9);
 }
 .success p {
@@ -153,17 +246,6 @@ button[disabled] { opacity: 0.6; cursor: default; }
   color: #A6A199;
 }
 .success p b { color: #F5F2EA; font-weight: 600; }
-
-/* unwired warning (visible only while FORM_ENDPOINT is empty) */
-.unwired {
-  display: none;
-  margin-top: 16px;
-  padding: 10px 16px;
-  border: 1px solid #7a5c2e;
-  border-radius: 10px;
-  font-size: 13px;
-  color: #C9A96A;
-}
 
 .foot {
   text-align: center;
@@ -214,29 +296,49 @@ button[disabled] { opacity: 0.6; cursor: default; }
 </div>
 
 <div class="page">
-  <div class="filetag">RALLY CONFIDENTIAL &middot; FILE 004</div>
+  <div class="filetag">RALLY CONFIDENTIAL &middot; THE FOUNDING 10</div>
 
   <div class="center">
     <div class="mark">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="-171.95 -1647.44 4110.31 2210.78"><g transform="scale(1,-1)" fill="#F5F2EA"><path transform="translate(0.00,0)" d="M392 750 391 265Q391 233 407 224L479 182Q502 168 549 231Q559 244 574.0 236.5Q589 229 574 211Q469 94 413 -19Q396 -42 376 -19Q320 46 271.5 80.0Q223 114 129 136Q111 141 111.0 152.0Q111 163 124 168Q191 179 190 283V706Q190 808 152 831Q108 860 80 810Q69 789 55.0 800.0Q41 811 56 835Q85 881 111.5 929.0Q138 977 166 1025Q183 1055 211 1036Q358 965 387 856Q390 846 399.0 843.5Q408 841 415 850L569 1027Q575 1033 583.0 1032.5Q591 1032 596 1024L701 823Q705 814 699 806L579 662Q572 655 563.5 656.0Q555 657 552 665L471 815Q467 821 458.5 822.5Q450 824 443 817L396 760Q392 756 392 750Z"/><path transform="translate(743.00,0)" d="M534 141Q483 102 422.0 55.5Q361 9 309 -30Q291 -44 280.5 -42.0Q270 -40 272 -24Q272 -3 210 56Q47 209 53 454Q59 664 248 809Q306 853 356.5 902.0Q407 951 446 1021Q462 1052 490 1023Q642 851 794 820Q842 811 804 782Q757 748 753 698V696L756 239Q756 193 789.5 176.0Q823 159 862 202Q877 219 890.5 210.5Q904 202 891 180Q855 126 821.5 74.0Q788 22 765 -34L764 -35Q750 -58 730 -35Q719 -23 704 -19Q590 6 560 132Q558 138 550 144Q541 145 534 141ZM545 730Q483 747 400 826Q360 874 336 835Q230 677 253 486Q285 213 445 149Q446 149 447 148Q488 135 546 197Q550 203 550 208Q549 223 549 255L558 714Q558 726 545 730Z"/><path transform="translate(1686.00,0)" d="M52 1314Q39 1328 51.5 1341.0Q64 1354 83 1336Q106 1308 130.5 1276.0Q155 1244 172 1210Q177 1200 186.5 1200.0Q196 1200 201 1208Q260 1308 365.0 1369.5Q470 1431 592 1427Q615 1426 616.0 1407.5Q617 1389 592 1389Q493 1389 433.5 1332.0Q374 1275 374 1124L373 258Q373 226 388 217L460 176Q485 167 529 224Q540 239 556.0 230.5Q572 222 555 204Q450 87 394 -26Q382 -47 358 -26Q309 37 257.0 73.5Q205 110 111 129Q95 131 94.5 143.5Q94 156 105 161Q130 170 150.5 194.5Q171 219 171 276L170 948Q170 1092 139.0 1175.0Q108 1258 52 1314Z"/><path transform="translate(2245.00,0)" d="M52 1314Q39 1328 51.5 1341.0Q64 1354 83 1336Q106 1308 130.5 1276.0Q155 1244 172 1210Q177 1200 186.5 1200.0Q196 1200 201 1208Q260 1308 365.0 1369.5Q470 1431 592 1427Q615 1426 616.0 1407.5Q617 1389 592 1389Q493 1389 433.5 1332.0Q374 1275 374 1124L373 258Q373 226 388 217L460 176Q485 167 529 224Q540 239 556.0 230.5Q572 222 555 204Q450 87 394 -26Q382 -47 358 -26Q309 37 257.0 73.5Q205 110 111 129Q95 131 94.5 143.5Q94 156 105 161Q130 170 150.5 194.5Q171 219 171 276L170 948Q170 1092 139.0 1175.0Q108 1258 52 1314Z"/><path transform="translate(2804.00,0)" d="M416 878Q476 911 537.5 949.5Q599 988 651 1038Q686 1075 693 1025Q696 988 724.0 959.0Q752 930 775 902Q909 732 914 530Q920 236 706.5 10.5Q493 -215 317 -334Q293 -350 282.5 -338.0Q272 -326 288 -313Q429 -188 573.0 -40.0Q717 108 703 429Q697 555 664.0 666.5Q631 778 546 852Q498 891 407 839Q400 834 400 824Q401 631 402.5 498.5Q404 366 405 232Q408 140 471 165L516 200Q533 213 546.0 202.0Q559 191 544 177Q493 126 445.5 77.5Q398 29 369 -24Q358 -47 332 -24Q284 31 259.5 53.0Q235 75 139 120Q119 127 119.5 138.0Q120 149 133 153Q197 175 196 285Q196 399 198.5 515.5Q201 632 198 743Q196 789 174.5 813.0Q153 837 133 855Q43 930 61.5 1021.0Q80 1112 182 1206Q200 1226 213.5 1215.0Q227 1204 214 1190Q169 1144 174.0 1100.5Q179 1057 246 1037Q324 1013 354.0 976.0Q384 939 392 891Q393 883 400.5 878.5Q408 874 416 878Z"/></g></svg>
     </div>
 
-    <h1>Not everyone<br /><span class="accent">gets in.</span></h1>
+    <h1>Ten founding spots.<br /><span class="accent">Then it's public.</span></h1>
 
-    <p class="sub">Rally is building AI swing analysis &mdash; your swing, scored the way a coach scores it, calibrated against a real USPTA coach's eye. The files reach the list first.</p>
+    <div class="counter" id="counter">10 OF 10 REMAINING</div>
+
+    <p class="sub"><b>One swing. One score. One fix.</b><br />
+    Film one swing and Rally AI scores it against pro standards, then hands you the single fix that matters — with the drill to fix it. Built by a USPTA coach. Validated on tour footage. Public on the App&nbsp;Store this October.</p>
+
+    <div class="buys">
+      <div class="price">$99 <small>ONCE &middot; FOUNDING ONLY</small></div>
+      <ul>
+        <li><b>The app this week</b> — private beta invite + your personal access token</li>
+        <li><b>First year of Rally Pro</b> included at launch</li>
+        <li><b>Founding price locked forever</b> — your rate never goes up</li>
+        <li><b>A month of the coach's eye</b> — your swings personally reviewed, the fix sent to you</li>
+        <li><b>Founder status</b> — first access to every new stroke and feature</li>
+      </ul>
+    </div>
+
+    <div class="ctas">
+      <a class="btn btn-dm" href="https://ig.me/m/rallyconfidential">DM &ldquo;FOUNDING&rdquo; TO CLAIM</a>
+      <a class="btn btn-venmo" href="https://venmo.com/u/bryce-ranchero">READY NOW? VENMO $99</a>
+      <p class="ctanote">Venmo <b>@bryce-ranchero</b> &middot; note <b>&ldquo;RALLY FOUNDING&rdquo;</b> &middot; Zelle available over DM.<br />Then drop your email below &mdash; your invite lands the same day.</p>
+    </div>
 
     <form id="waitlist" novalidate>
+      <div class="formhead">PAID &mdash; OR WANT SPOT 11+</div>
       <div class="fieldwrap">
         <input type="email" name="email" id="email" placeholder="your@email.com" autocomplete="email" required />
-        <button type="submit" id="submitbtn">REQUEST CLEARANCE</button>
+        <button type="submit" id="submitbtn">SEND MY INVITE</button>
       </div>
-      <div class="unwired" id="unwired">&#9888; Form endpoint not configured yet &mdash; emails are NOT being captured. See _README.md in this folder.</div>
-      <div class="fineprint">No spam. Just declassified files.</div>
+      <div class="fineprint">Founders get the beta invite same-day. Everyone else joins the list for launch &mdash; no spam, just the app when it's ready.<br /><br />Your swing video is deleted the moment it's scored &mdash; nothing stored, shared, or sold. Players under 18 need a parent's signed consent.</div>
     </form>
 
     <div class="success" id="success">
-      <span class="stamp">CLEARANCE REQUESTED</span>
-      <p>You're on the list.<br /><b>FILE 005 reaches you before anyone sees it.</b></p>
+      <span class="stamp">CLAIM LOGGED</span>
+      <p>You're in the system.<br /><b>If you've paid, your invite lands today.</b><br />Otherwise &mdash; you're on the list for launch.</p>
     </div>
   </div>
 
@@ -245,20 +347,18 @@ button[disabled] { opacity: 0.6; cursor: default; }
 
 <script>
 /* ============================================================
-   CONFIG — set this before the page goes live.
-   Paste a Formspree endpoint, e.g. "https://formspree.io/f/abcdwxyz"
-   (see _README.md for the 5-minute setup). While empty, the page
-   shows a visible warning and refuses to pretend it worked.
+   SPOTS COUNTER — update this number as founders pay.
+   (Edit + push, or tell Jarvis "founding count is N".)
    ============================================================ */
+var SPOTS_REMAINING = 10;
+document.getElementById("counter").textContent =
+  SPOTS_REMAINING + " OF 10 REMAINING";
+
 var FORM_ENDPOINT = "https://formspree.io/f/xkolepbo";
 
 var form = document.getElementById("waitlist");
 var btn = document.getElementById("submitbtn");
 var emailEl = document.getElementById("email");
-
-if (!FORM_ENDPOINT) {
-  document.getElementById("unwired").style.display = "block";
-}
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -268,23 +368,19 @@ form.addEventListener("submit", function (e) {
     emailEl.style.borderColor = "#B0663F";
     return;
   }
-  if (!FORM_ENDPOINT) {
-    alert("Form endpoint not configured yet — see _README.md. Emails are not being captured.");
-    return;
-  }
   btn.disabled = true;
   btn.textContent = "SUBMITTING…";
   fetch(FORM_ENDPOINT, {
     method: "POST",
     headers: { "Content-Type": "application/json", "Accept": "application/json" },
-    body: JSON.stringify({ email: email, source: "rally-waitlist" })
+    body: JSON.stringify({ email: email, source: "rally-founding-10" })
   }).then(function (r) {
     if (!r.ok) throw new Error("HTTP " + r.status);
     form.style.display = "none";
     document.getElementById("success").style.display = "block";
   }).catch(function () {
     btn.disabled = false;
-    btn.textContent = "REQUEST CLEARANCE";
+    btn.textContent = "SEND MY INVITE";
     alert("Something glitched — try again in a second.");
   });
 });
