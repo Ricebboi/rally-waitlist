@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Rally AI — Mission Card (Pin 1)</title>
+<meta name="hz:slide-selector" content=".post" />
+<meta name="hz:canvas-width" content="1080" />
+<meta name="hz:canvas-height" content="1350" />
+<link rel="stylesheet" href="https://use.typekit.net/ftn2gsq.css">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { background: #0B0B0A; }
+
+.post {
+  position: absolute;
+  top: 0; left: 0;
+  width: 1080px;
+  height: 1350px;
+  background: #0B0B0A;
+  overflow: hidden;
+  font-family: "source-sans-3", sans-serif;
+}
+
+.glow {
+  position: absolute;
+  left: 50%; top: 46%;
+  width: 1700px; height: 1700px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle at center, rgba(233,225,205,0.09) 0%, rgba(233,225,205,0.035) 42%, rgba(233,225,205,0) 68%);
+}
+
+.ball { position: absolute; }
+.ball-a { top: -70px; right: -90px; width: 300px; height: 300px; filter: blur(16px); opacity: 0.5; }
+.ball-b { bottom: 150px; left: -55px; width: 170px; height: 170px; filter: blur(5px); opacity: 0.8; }
+.ball-c { top: 200px; left: 90px; width: 90px; height: 90px; filter: blur(18px); opacity: 0.4; }
+
+.filetag {
+  position: absolute;
+  top: 92px; left: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.32em;
+  text-indent: 0.32em;
+  color: #6E6A62;
+}
+
+.middle {
+  position: absolute;
+  left: 0; top: 50%;
+  width: 100%;
+  transform: translateY(-52%);
+  text-align: center;
+}
+
+.mark svg { width: 430px; height: auto; }
+
+h1 {
+  margin-top: 64px;
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 700;
+  font-size: 142px;
+  line-height: 1.06;
+  letter-spacing: -0.015em;
+  color: #F5F2EA;
+}
+h1 .accent { color: #D9CDA9; }
+
+.foot {
+  position: absolute;
+  bottom: 92px; left: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 23px;
+  letter-spacing: 0.5em;
+  text-indent: 0.5em;
+  color: #8F8A80;
+}
+</style>
+</head>
+<body>
+
+<div class="post" data-canvas-width="1080" data-canvas-height="1350">
+  <div class="glow"></div>
+
+  <svg class="ball ball-a" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs><radialGradient id="shadeA" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#EFE8D6"/><stop offset="70%" stop-color="#D8CFB6"/><stop offset="100%" stop-color="#B8AE93"/>
+    </radialGradient></defs>
+    <circle cx="50" cy="50" r="48" fill="url(#shadeA)"/>
+    <path d="M6 30 Q 50 56 94 30" stroke="#A79C7F" stroke-width="3.5" fill="none"/>
+    <path d="M6 70 Q 50 44 94 70" stroke="#A79C7F" stroke-width="3.5" fill="none"/>
+  </svg>
+  <svg class="ball ball-b" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs><radialGradient id="shadeB" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#EFE8D6"/><stop offset="70%" stop-color="#D8CFB6"/><stop offset="100%" stop-color="#B8AE93"/>
+    </radialGradient></defs>
+    <circle cx="50" cy="50" r="48" fill="url(#shadeB)"/>
+    <path d="M6 30 Q 50 56 94 30" stroke="#A79C7F" stroke-width="3.5" fill="none"/>
+    <path d="M6 70 Q 50 44 94 70" stroke="#A79C7F" stroke-width="3.5" fill="none"/>
+  </svg>
+  <svg class="ball ball-c" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs><radialGradient id="shadeC" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#EFE8D6"/><stop offset="70%" stop-color="#D8CFB6"/><stop offset="100%" stop-color="#B8AE93"/>
+    </radialGradient></defs>
+    <circle cx="50" cy="50" r="48" fill="url(#shadeC)"/>
+    <path d="M6 30 Q 50 56 94 30" stroke="#A79C7F" stroke-width="3.5" fill="none"/>
+    <path d="M6 70 Q 50 44 94 70" stroke="#A79C7F" stroke-width="3.5" fill="none"/>
+  </svg>
+
+  <div class="filetag">RALLY CONFIDENTIAL</div>
+
+  <div class="middle">
+    <div class="mark">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-171.95 -1647.44 4110.31 2210.78"><g transform="scale(1,-1)" fill="#F5F2EA"><path transform="translate(0.00,0)" d="M392 750 391 265Q391 233 407 224L479 182Q502 168 549 231Q559 244 574.0 236.5Q589 229 574 211Q469 94 413 -19Q396 -42 376 -19Q320 46 271.5 80.0Q223 114 129 136Q111 141 111.0 152.0Q111 163 124 168Q191 179 190 283V706Q190 808 152 831Q108 860 80 810Q69 789 55.0 800.0Q41 811 56 835Q85 881 111.5 929.0Q138 977 166 1025Q183 1055 211 1036Q358 965 387 856Q390 846 399.0 843.5Q408 841 415 850L569 1027Q575 1033 583.0 1032.5Q591 1032 596 1024L701 823Q705 814 699 806L579 662Q572 655 563.5 656.0Q555 657 552 665L471 815Q467 821 458.5 822.5Q450 824 443 817L396 760Q392 756 392 750Z"/><path transform="translate(743.00,0)" d="M534 141Q483 102 422.0 55.5Q361 9 309 -30Q291 -44 280.5 -42.0Q270 -40 272 -24Q272 -3 210 56Q47 209 53 454Q59 664 248 809Q306 853 356.5 902.0Q407 951 446 1021Q462 1052 490 1023Q642 851 794 820Q842 811 804 782Q757 748 753 698V696L756 239Q756 193 789.5 176.0Q823 159 862 202Q877 219 890.5 210.5Q904 202 891 180Q855 126 821.5 74.0Q788 22 765 -34L764 -35Q750 -58 730 -35Q719 -23 704 -19Q590 6 560 132Q558 138 550 144Q541 145 534 141ZM545 730Q483 747 400 826Q360 874 336 835Q230 677 253 486Q285 213 445 149Q446 149 447 148Q488 135 546 197Q550 203 550 208Q549 223 549 255L558 714Q558 726 545 730Z"/><path transform="translate(1686.00,0)" d="M52 1314Q39 1328 51.5 1341.0Q64 1354 83 1336Q106 1308 130.5 1276.0Q155 1244 172 1210Q177 1200 186.5 1200.0Q196 1200 201 1208Q260 1308 365.0 1369.5Q470 1431 592 1427Q615 1426 616.0 1407.5Q617 1389 592 1389Q493 1389 433.5 1332.0Q374 1275 374 1124L373 258Q373 226 388 217L460 176Q485 167 529 224Q540 239 556.0 230.5Q572 222 555 204Q450 87 394 -26Q382 -47 358 -26Q309 37 257.0 73.5Q205 110 111 129Q95 131 94.5 143.5Q94 156 105 161Q130 170 150.5 194.5Q171 219 171 276L170 948Q170 1092 139.0 1175.0Q108 1258 52 1314Z"/><path transform="translate(2245.00,0)" d="M52 1314Q39 1328 51.5 1341.0Q64 1354 83 1336Q106 1308 130.5 1276.0Q155 1244 172 1210Q177 1200 186.5 1200.0Q196 1200 201 1208Q260 1308 365.0 1369.5Q470 1431 592 1427Q615 1426 616.0 1407.5Q617 1389 592 1389Q493 1389 433.5 1332.0Q374 1275 374 1124L373 258Q373 226 388 217L460 176Q485 167 529 224Q540 239 556.0 230.5Q572 222 555 204Q450 87 394 -26Q382 -47 358 -26Q309 37 257.0 73.5Q205 110 111 129Q95 131 94.5 143.5Q94 156 105 161Q130 170 150.5 194.5Q171 219 171 276L170 948Q170 1092 139.0 1175.0Q108 1258 52 1314Z"/><path transform="translate(2804.00,0)" d="M416 878Q476 911 537.5 949.5Q599 988 651 1038Q686 1075 693 1025Q696 988 724.0 959.0Q752 930 775 902Q909 732 914 530Q920 236 706.5 10.5Q493 -215 317 -334Q293 -350 282.5 -338.0Q272 -326 288 -313Q429 -188 573.0 -40.0Q717 108 703 429Q697 555 664.0 666.5Q631 778 546 852Q498 891 407 839Q400 834 400 824Q401 631 402.5 498.5Q404 366 405 232Q408 140 471 165L516 200Q533 213 546.0 202.0Q559 191 544 177Q493 126 445.5 77.5Q398 29 369 -24Q358 -47 332 -24Q284 31 259.5 53.0Q235 75 139 120Q119 127 119.5 138.0Q120 149 133 153Q197 175 196 285Q196 399 198.5 515.5Q201 632 198 743Q196 789 174.5 813.0Q153 837 133 855Q43 930 61.5 1021.0Q80 1112 182 1206Q200 1226 213.5 1215.0Q227 1204 214 1190Q169 1144 174.0 1100.5Q179 1057 246 1037Q324 1013 354.0 976.0Q384 939 392 891Q393 883 400.5 878.5Q408 874 416 878Z"/></g></svg>
+    </div>
+    <h1>One swing.<br />One score.<br /><span class="accent">One fix.</span></h1>
+  </div>
+
+  <div class="foot">@RALLYCONFIDENTIAL</div>
+</div>
+
+</body>
+</html>
