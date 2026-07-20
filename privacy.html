@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rally AI Privacy Policy &amp; Biometric Retention Notice</title>
+<meta name="description" content="How Rally AI processes swing videos, analysis results, device identifiers, and waitlist email addresses." />
+<link rel="stylesheet" href="https://use.typekit.net/ftn2gsq.css">
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #0B0B0A;
+  color: #F5F2EA;
+  font-family: "source-sans-3", sans-serif;
+  line-height: 1.62;
+}
+main { width: min(760px, calc(100% - 40px)); margin: 0 auto; padding: 48px 0 72px; }
+.filetag { color: #6E6A62; font-size: 12px; font-weight: 600; letter-spacing: .28em; }
+h1, h2 { font-family: "acumin-pro", sans-serif; }
+h1 { margin: 26px 0 6px; font-size: clamp(38px, 9vw, 62px); line-height: 1.02; }
+h2 { margin: 38px 0 10px; color: #D9CDA9; font-size: 22px; }
+p, li { color: #B8B3AA; }
+strong { color: #F5F2EA; }
+a { color: #D9CDA9; }
+.notice { margin: 28px 0; padding: 18px 20px; border: 1px solid #3B3B36; border-radius: 14px; background: #11110F; }
+.notice strong { display: block; margin-bottom: 4px; color: #E2A46F; letter-spacing: .04em; }
+ul { padding-left: 22px; }
+li { margin: 8px 0; }
+.back { display: inline-block; margin-top: 44px; font-size: 13px; letter-spacing: .12em; text-decoration: none; }
+</style>
+</head>
+<body>
+<main>
+  <div class="filetag">RALLY CONFIDENTIAL</div>
+  <h1>Privacy Policy</h1>
+  <p><strong>Effective:</strong> July 19, 2026<br /><strong>Policy version:</strong> 2026-07-19-beta-2</p>
+
+  <div class="notice">
+    <strong>PRIVATE BETA — ADULTS ONLY</strong>
+    Rally's United States private beta is limited to adults age 18 or older. Upload only your own swing, with no minors or bystanders in frame.
+  </div>
+
+  <p>This Privacy Policy and biometric retention schedule explain how Rally AI ("Rally," "we," or "us"), operated in Illinois, handles information through the Rally AI iPhone app and invitation website. It applies to the private beta currently offered to invited adults in the United States. Privacy questions, deletion requests, and requests for the operator's legal mailing information may be sent to <a href="mailto:ricebboi@gmail.com">ricebboi@gmail.com</a>.</p>
+
+  <div class="notice">
+    <strong>THE SHORT VERSION</strong>
+    Audio is removed before upload. A swing clip is used to return one analysis and then deleted from Rally's server. Rally does not sell swing data, use it for advertising or identity recognition, or use it to train an AI model.
+  </div>
+
+  <h2>1. Information involved</h2>
+  <ul>
+    <li><strong>Swing video:</strong> the short video track you record or choose. Rally removes audio on your iPhone before upload.</li>
+    <li><strong>Body-landmark processing:</strong> temporary joint locations and swing measurements produced automatically from the video. Whole-body pose software may momentarily calculate limited face or hand landmark locations internally. Rally does not create or retain a faceprint, voiceprint, identity template, or authentication profile.</li>
+    <li><strong>Analysis inputs and outputs:</strong> selected stroke and hitting hand; a score, confidence rating, technique breakdown, priority fix, drill, and contact image.</li>
+    <li><strong>Beta, consent, and security information:</strong> a random installation identifier; a revocable invite credential stored in the iPhone Keychain; a pseudonymous consent version, signature date, and random receipt ID; a request ID; and limited request metadata such as file size, clip duration, stage timing, and coarse success or rejection status.</li>
+    <li><strong>Information stored on your iPhone:</strong> saved results and contact images, profile answers, court nickname, preferences, adult-attestation result, consent record, and reminder state. If you correct an accidental under-18 answer, Rally checks a date of birth locally but does not save or upload the date.</li>
+    <li><strong>Waitlist information:</strong> an email address you voluntarily submit. The form service also receives normal request information such as IP address, browser type, access time, and referring page.</li>
+    <li><strong>Website request information:</strong> when you load the invitation or policy website, the hosting and font providers receive the technical information needed to deliver the page, such as IP address, browser/device information, requested page, time, referring page, and website hostname.</li>
+  </ul>
+
+  <h2>2. How Rally uses information</h2>
+  <p>Rally uses a submitted clip and temporary landmark measurements only to provide the requested swing analysis. Rally does not use them to recognize a face, identify or authenticate a person, advertise, build a marketing profile, or train an AI model. The pose model is MediaPipe software running inside Rally's hosted service; Rally does not send the clip or landmarks to Google or to a separate third-party AI provider.</p>
+  <p>The installation identifier, invite credential, and consent receipt enforce private-beta access, current consent, revocation, reliability, and abuse prevention. Rally uses waitlist email addresses only for invitations and related beta communication. Website request information is used to deliver and secure the site and its fonts.</p>
+
+  <h2>3. Illinois biometric notice and written release</h2>
+  <p>Illinois law defines covered biometric identifiers to include certain scans of hand or face geometry. Rally does not use its measurements to identify anyone and may not be collecting a covered biometric identifier. Nevertheless, for this private beta Rally takes the conservative approach of treating automatic body-landmark measurements as biometric processing and obtaining a written electronic release before upload.</p>
+  <p>The in-app release states the <strong>specific purpose</strong> (producing one requested tennis-swing analysis), <strong>length of term</strong> (only while that request completes or fails), intended disclosure to Modal, and destruction schedule. The user must separately affirm the notice and tap <strong>Consent &amp; Electronically Sign</strong>. Rally does not sell, lease, trade, or otherwise profit from biometric identifiers or information.</p>
+
+  <h2>4. Service providers and disclosures</h2>
+  <ul>
+    <li><strong>Modal Labs, Inc.:</strong> the app sends the audio-free video over encrypted HTTPS to Rally's analysis service hosted by <a href="https://modal.com/legal/terms">Modal</a>. Modal provides contracted infrastructure and security services under its service and data-processing terms and uses infrastructure and observability subprocessors. Request and response payloads for Modal web endpoints are proxied to Rally's container and are not stored at Modal's edge.</li>
+    <li><strong>Formspree, Inc.:</strong> <a href="https://formspree.io/legal/privacy-policy/">Formspree</a> accepts, screens for spam, stores, and emails invitation-form submissions and related request information.</li>
+    <li><strong>GitHub, Inc.:</strong> <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Pages</a> hosts the invitation and policy pages and processes ordinary website request information.</li>
+    <li><strong>Adobe Inc.:</strong> <a href="https://www.adobe.com/privacy/policies/adobe-fonts.html">Adobe Fonts</a> delivers the site's typefaces and receives the website hostname, font-project information, and visitor IP address. Adobe states that its web-font service does not set cookies to serve fonts and does not store the IP address it receives for delivery.</li>
+    <li><strong>Google LLC:</strong> <a href="https://policies.google.com/privacy">Gmail</a> processes waitlist notification copies and messages sent to Rally's privacy contact.</li>
+    <li><strong>Apple Inc.:</strong> <a href="https://www.apple.com/legal/privacy/">Apple</a> handles TestFlight distribution under its own privacy terms. Rally has no user account system and does not receive your Apple ID credentials. Rally may receive beta feedback or diagnostic information that a tester chooses to submit or share through Apple.</li>
+  </ul>
+  <p>Rally is responsible for its service providers and requires contracted processors that receive Rally user data to provide protections consistent with this policy and applicable law. Rally does not authorize any provider to use swing video or body-landmark measurements for advertising, identity recognition, data brokerage, or model training. Rally may disclose information when required by applicable law, a valid warrant, subpoena, or court order; to protect the security and integrity of the service; or with the user's direction and consent.</p>
+
+  <h2>5. Public retention and destruction schedule</h2>
+  <ul>
+    <li><strong>Video and temporary landmark measurements:</strong> destroyed when the requested analysis completes or fails. They are not placed in Rally backups or a biometric database.</li>
+    <li><strong>Server results:</strong> the returned contact image and detailed coaching result are not intentionally retained by Rally's server.</li>
+    <li><strong>Operational logs:</strong> exclude the video, audio, landmark coordinates, contact image, score, and coaching result. Modal retains app/container logs for no more than 30 days under its current plan-dependent schedule.</li>
+    <li><strong>On-device results and consent:</strong> remain until you delete Rally data, withdraw consent where applicable, or uninstall the app.</li>
+    <li><strong>Invite records:</strong> hashed credentials and opaque tester slots remain until revoked, the beta ends, or Modal removes inactive dictionary entries under its service retention schedule. Rally prohibits names, emails, phone numbers, and social handles in the server-side slot label.</li>
+    <li><strong>Waitlist submissions:</strong> remain in Rally's Formspree account and notification email only while the invitation program is active. Rally-controlled copies will be deleted within 30 days after the invitation program ends or after Rally completes a verified deletion request, unless a limited copy is required for security, legal compliance, or to record an opt-out. Formspree and email-provider security records may remain longer under their own policies.</li>
+    <li><strong>Website delivery records:</strong> are retained by GitHub, Adobe, and other network providers under their own security and service-retention schedules. Rally does not maintain a separate website analytics database.</li>
+  </ul>
+  <p>If Rally ever possesses covered biometric identifiers or information beyond the request despite the controls above, Rally will permanently destroy them when the collection purpose is satisfied or within three years of the person's last interaction with Rally, whichever occurs first, unless a valid warrant or subpoena requires otherwise.</p>
+
+  <h2>6. Your choices</h2>
+  <p>You may decline the electronic release and no clip will be uploaded. In <strong>Profile → Privacy &amp; Data</strong>, you may review the signature date, withdraw consent for future uploads, or delete all locally stored Rally data. Withdrawing consent does not affect processing already completed. Because Rally does not retain server-side swing history, there is normally no remote video, landmark set, score, or contact image to retrieve or delete. Limited operational logs and beta-access records follow the schedule above.</p>
+  <p>To request access to or deletion or correction of information under Rally's control, delete a waitlist submission or beta-access label, report that a minor used the service, or ask a privacy question, email <a href="mailto:ricebboi@gmail.com">ricebboi@gmail.com</a>. Rally may ask for enough information to verify the request without collecting unnecessary identity documents and will respond as required by applicable law. You may also withdraw a waitlist request at any time.</p>
+
+  <h2>7. Adults-only beta and other people</h2>
+  <p>Rally's private beta is not offered to anyone under 18 and is not directed to children. Before recording or choosing a swing, the app requires an 18+ answer. A No answer locks the app. If No was tapped accidentally, a date-of-birth recovery check occurs locally; the date is not saved or uploaded, an adult result restores access, and an under-18 result remains locked. Do not upload another person's swing or a clip containing a minor or bystander. If Rally learns that an underage person submitted information, Rally will disable the relevant access credential and promptly delete information under its control, subject only to legal or security preservation requirements.</p>
+
+  <h2>8. Security and incidents</h2>
+  <p>Rally uses encrypted network transport, revocable per-device credentials, temporary server files, minimized logs, and on-device history. Modal states that customer data is encrypted in transit and at rest and that it maintains SOC 2 Type 2 controls. No security measure guarantees absolute protection. Rally will investigate suspected unauthorized access and provide notices required by applicable law.</p>
+
+  <h2>9. No sale, advertising, tracking, or model training</h2>
+  <p>Rally does not sell, lease, trade, or profit from swing videos or body-landmark measurements; use them for advertising or cross-context tracking; or use them to train an AI model. Rally does not place advertising or analytics trackers in the app and does not operate advertising analytics on the invitation website. If Rally ever proposes a materially different use, it will update this policy and obtain a new consent before collecting another clip.</p>
+
+  <h2>10. State privacy rights</h2>
+  <p>Depending on where you live, applicable law may provide additional access, correction, deletion, appeal, or consent rights. Rally will honor rights that apply to its processing. The uniform private-beta controls in this policy—advance notice, express consent, no identity use, no sale, immediate destruction of swing data, and a request channel—are used for all invited testers rather than only residents of a particular state.</p>
+
+  <h2>11. Changes</h2>
+  <p>Rally may update this policy as the product or law changes. The effective date and version will appear above. A material change to video, landmark, disclosure, or retention practices will require a new in-app electronic release before another upload.</p>
+
+  <h2>12. Contact</h2>
+  <p>Privacy questions and deletion requests: <a href="mailto:ricebboi@gmail.com">ricebboi@gmail.com</a>.</p>
+
+  <a class="back" href="index.html">← BACK TO RALLY AI</a>
+</main>
+</body>
+</html>
