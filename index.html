@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Rally AI — One swing. One score. One fix.</title>
-<meta name="description" content="Rally AI is an AI tennis coach. Film one swing — get a score against pro standards and the one fix that matters, with the drill to work it. Sign up for an app invitation." />
+<meta name="description" content="Rally AI is a coach-led tennis analysis app. Film one swing, see one honest score, understand why, and work on one priority fix." />
 <link rel="stylesheet" href="https://use.typekit.net/ftn2gsq.css">
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -183,6 +183,17 @@ button[disabled] { opacity: 0.6; cursor: default; }
   text-decoration: none;
   display: block;
 }
+.legal-links {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.legal-links a {
+  color: #8F8A80;
+  font-size: 12px;
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -235,24 +246,29 @@ button[disabled] { opacity: 0.6; cursor: default; }
 
     <p class="sub">Film one swing. <b>Rally AI</b> scores it against pro standards, shows you the one fix that matters, and gives you the drill to work it. No more guessing what to work on &mdash; every session has a direction.</p>
 
-    <p class="status">Built by a USPTA coach. In private beta now &mdash; public on the App&nbsp;Store this fall.</p>
+    <p class="status">Built by a USPTA coach for adult players in the United States. Public App&nbsp;Store release is next.</p>
 
     <form id="waitlist" novalidate>
-      <div class="formhead">SIGN UP FOR AN APP INVITATION</div>
+      <div class="formhead">GET THE PUBLIC LAUNCH LINK</div>
       <div class="fieldwrap">
         <input type="email" name="email" id="email" placeholder="your@email.com" autocomplete="email" required />
-        <button type="submit" id="submitbtn">SEND MY INVITE</button>
+        <button type="submit" id="submitbtn">JOIN THE LAUNCH LIST</button>
       </div>
-      <div class="fineprint">No spam &mdash; just your invitation when it's ready.<br /><br />Your swing video is deleted the moment it's scored &mdash; nothing stored, shared, or sold. Players under 18 need a parent's signed consent.</div>
+      <div class="fineprint">No spam &mdash; just Rally launch and product communication.<br /><br />Rally AI is for adults 18 and older. Swing videos are processed only to return the requested analysis and are not sold, used for advertising, or used to train an AI model. <a href="privacy.html" style="color:#A79C7F">Privacy Policy</a> · <a href="consumer-health.html" style="color:#A79C7F">Consumer Health Data Privacy Policy</a></div>
     </form>
 
     <div class="success" id="success">
       <span class="stamp">ON THE LIST</span>
-      <p>You're in. <b>Your app invitation will land in your inbox.</b></p>
+      <p>You're in. <b>The public launch link will land in your inbox.</b></p>
     </div>
   </div>
 
-  <a class="foot" href="https://instagram.com/rallyconfidential">@RALLYCONFIDENTIAL</a>
+  <div class="legal-links">
+    <a class="foot" href="https://instagram.com/rallyconfidential">@RALLYCONFIDENTIAL</a>
+    <a href="privacy.html">PRIVACY</a>
+    <a href="consumer-health.html">CONSUMER HEALTH DATA</a>
+    <a href="support.html">SUPPORT</a>
+  </div>
 </div>
 
 <script>
@@ -275,14 +291,14 @@ form.addEventListener("submit", function (e) {
   fetch(FORM_ENDPOINT, {
     method: "POST",
     headers: { "Content-Type": "application/json", "Accept": "application/json" },
-    body: JSON.stringify({ email: email, source: "rally-invite" })
+    body: JSON.stringify({ email: email, source: "rally-public-launch" })
   }).then(function (r) {
     if (!r.ok) throw new Error("HTTP " + r.status);
     form.style.display = "none";
     document.getElementById("success").style.display = "block";
   }).catch(function () {
     btn.disabled = false;
-    btn.textContent = "SEND MY INVITE";
+    btn.textContent = "JOIN THE LAUNCH LIST";
     alert("Something glitched — try again in a second.");
   });
 });
