@@ -28,11 +28,16 @@ li { margin: 8px 0; }
 <main>
   <div class="filetag">RALLY CONFIDENTIAL</div>
   <h1>Consumer Health<br />Data Privacy Policy</h1>
-  <p><strong>Effective:</strong> July 30, 2026<br /><strong>Policy version:</strong> 2026-07-28-public-v1-2</p>
+  <p><strong>Effective:</strong> July 30, 2026<br /><strong>Clarified:</strong> August 16, 2026<br /><strong>In-app consent disclosure version:</strong> 2026-07-28-public-v1-2 — unchanged because this clarification adds no data category, purpose, recipient, or retention practice<br /><strong>Policy clarification revision:</strong> 2026-08-16-app-review-clarification-1</p>
 
   <div class="notice">
     <strong>SEPARATE AND DISTINCT NOTICE</strong>
     This policy covers only consumer health data. Rally AI is a sports-coaching product, not a medical service. Rally applies this conservative policy nationwide because some state laws may define movement, bodily-function, biometric, or physical-performance measurements as consumer health data.
+  </div>
+
+  <div class="notice">
+    <strong>AI AND PROCESSOR ROUTING</strong>
+    Rally does not forward swing data to an external model-inference API. It sends the disclosed request to Rally's analysis endpoint hosted by Modal Labs, Inc., Rally's contracted cloud processor. Rally bundles and runs MediaPipe 0.10.14 inside Rally's server container hosted on Modal. Modal is the processor to which Rally directly routes the request; Modal's applicable infrastructure subprocessors are governed by its Data Processing Addendum.
   </div>
 
   <p>Rally AI ("Rally," "we," or "us") is operated by <strong>Bryce Ranchero</strong>, an individual in Illinois. This policy describes the consumer health data Rally may collect, the sources and purposes, the limited processing and disclosures, and how a consumer can exercise applicable rights.</p>
@@ -58,11 +63,11 @@ li { margin: 8px 0; }
 
   <h2>4. Categories disclosed, processors, third parties, and affiliates</h2>
   <ul>
-    <li><strong>Processor disclosure:</strong> the audio-free swing video and temporary landmarks and mechanics are disclosed to <strong>Modal Labs, Inc.</strong>, Rally's contracted hosting processor, only to run and secure the requested analysis. The processor disclosure is necessary to provide the requested service and is not a sale.</li>
-    <li><strong>Categories shared with third parties or affiliates:</strong> none. Rally has no affiliates and does not share consumer health data with advertisers, data brokers, or unrelated third parties.</li>
+    <li><strong>Processor disclosure:</strong> after the user agrees, the audio-free swing video and request fields are disclosed over encrypted HTTPS to <strong>Modal Labs, Inc.</strong>, Rally's contracted cloud-infrastructure processor, only to run and secure the requested analysis. Rally bundles and runs MediaPipe 0.10.14 inside Rally's server container hosted on Modal. Modal is the processor to which Rally directly routes the request; its applicable infrastructure subprocessors are governed by its Data Processing Addendum. This processor disclosure is necessary to provide the requested service and is not a sale.</li>
+    <li><strong>Other third parties or affiliates:</strong> beyond Modal and its DPA-governed infrastructure subprocessors, Rally does not disclose consumer health data to advertisers, data brokers, affiliates, or other unrelated third parties. The swing video, landmarks, mechanics, and analysis-request data are not sent to Google, OpenAI, Anthropic, or another external model-inference API.</li>
     <li><strong>Sale:</strong> none. Rally does not sell or offer to sell consumer health data.</li>
   </ul>
-  <p>Rally requires processing to remain consistent with this policy and the requested service. If Rally proposes a new category, purpose, or legally defined sharing that is not necessary to provide the requested service, Rally will disclose it and obtain the separate consent required by applicable law before the new processing begins.</p>
+  <p>For personal data processed during swing analysis, Rally's agreement with Modal incorporates Modal's <a href="https://modal.com/legal/dpa">Data Processing Addendum</a>. It limits processing to providing the contracted service, requires confidentiality and appropriate security, requires deletion, and binds applicable subprocessors to written terms at least as protective as the DPA. Rally therefore requires the same or equal protection for the personal data Modal processes. If Rally proposes a new category, purpose, or legally defined sharing that is not necessary to provide the requested service, Rally will disclose it and obtain the separate consent required by applicable law before the new processing begins.</p>
 
   <h2>5. Retention and deletion</h2>
   <ul>
