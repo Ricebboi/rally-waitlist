@@ -246,21 +246,9 @@ button[disabled] { opacity: 0.6; cursor: default; }
 
     <p class="sub">Film one swing. <b>Rally AI</b> scores it against pro standards, shows you the one fix that matters, and gives you the drill to work it. No more guessing what to work on &mdash; every session has a direction.</p>
 
-    <p class="status">Built by a USPTA coach for adult players in the United States. Public App&nbsp;Store release is next.</p>
+    <p class="status">Built by a USPTA coach for adult players in the United States.</p>
 
-    <form id="waitlist" novalidate>
-      <div class="formhead">GET THE PUBLIC LAUNCH LINK</div>
-      <div class="fieldwrap">
-        <input type="email" name="email" id="email" placeholder="your@email.com" autocomplete="email" required />
-        <button type="submit" id="submitbtn">JOIN THE LAUNCH LIST</button>
-      </div>
-      <div class="fineprint">No spam &mdash; just Rally launch and product communication.<br /><br />Rally AI is for adults 18 and older. Swing videos are processed only to return the requested analysis and are not sold, used for advertising, or used to train an AI model. <a href="privacy.html" style="color:#A79C7F">Privacy Policy</a> · <a href="consumer-health.html" style="color:#A79C7F">Consumer Health Data Privacy Policy</a></div>
-    </form>
-
-    <div class="success" id="success">
-      <span class="stamp">ON THE LIST</span>
-      <p>You're in. <b>The public launch link will land in your inbox.</b></p>
-    </div>
+    <p class="fineprint">Beta and launch-list signups are closed.</p>
   </div>
 
   <div class="legal-links">
@@ -271,38 +259,6 @@ button[disabled] { opacity: 0.6; cursor: default; }
   </div>
 </div>
 
-<script>
-var FORM_ENDPOINT = "https://formspree.io/f/xkolepbo";
-
-var form = document.getElementById("waitlist");
-var btn = document.getElementById("submitbtn");
-var emailEl = document.getElementById("email");
-
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  var email = emailEl.value.trim();
-  if (!email || email.indexOf("@") < 1 || email.indexOf(".") < 3) {
-    emailEl.focus();
-    emailEl.style.borderColor = "#B0663F";
-    return;
-  }
-  btn.disabled = true;
-  btn.textContent = "SUBMITTING…";
-  fetch(FORM_ENDPOINT, {
-    method: "POST",
-    headers: { "Content-Type": "application/json", "Accept": "application/json" },
-    body: JSON.stringify({ email: email, source: "rally-public-launch" })
-  }).then(function (r) {
-    if (!r.ok) throw new Error("HTTP " + r.status);
-    form.style.display = "none";
-    document.getElementById("success").style.display = "block";
-  }).catch(function () {
-    btn.disabled = false;
-    btn.textContent = "JOIN THE LAUNCH LIST";
-    alert("Something glitched — try again in a second.");
-  });
-});
-</script>
 
 </body>
 </html>
