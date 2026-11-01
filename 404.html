@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-C/8QUu/13ymUTLqI/ZowbPOv8I48ALP40TeZKwyrqvs='; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Rally invitation</title><style>*{box-sizing:border-box}body{margin:0;background:#080808;color:#f6f6f6;font:18px/1.6 system-ui,-apple-system,sans-serif}main{max-width:720px;margin:auto;padding:64px 24px}.brand{letter-spacing:.18em;font-weight:800;color:#54b6ff}h1{font-size:clamp(32px,8vw,52px);line-height:1.12}p{color:#c5c5c5}a{color:#59b8ff}.button{display:block;background:#008eff;color:white;border-radius:16px;padding:14px 20px;text-align:center;text-decoration:none;font-weight:650;margin:14px 0}.secondary{background:#252525}.note{padding:16px;border:1px solid #383838;border-radius:14px}footer{margin-top:48px;font-size:14px}a:focus-visible{outline:3px solid white;outline-offset:4px}[hidden]{display:none!important}</style></head>
+<body><main><div class="brand">RALLY</div>
+<h1 id="heading">This Rally link is unavailable</h1>
+<p id="message">Please check the invitation or ask the sender to share it again.</p>
+<a id="open-rally" class="button" hidden>Open in Rally</a>
+<a class="button secondary" href="https://apps.apple.com/us/app/rally-ai-tennis-tracker/id6791074738">Get Rally for iPhone</a>
+<div id="invitation-note" hidden>
+<p class="note">New to Rally? Install the app, then return to this invitation and tap Open in Rally. Sign in or create your Community profile to continue.</p>
+<p>Private content remains private. You may need an accepted follow request to view the shared content. Rally Community is for adults 18 and older.</p>
+</div>
+<p>Community requires Rally 2.0.3 or later. Check the App Store for the latest update. If your installed version does not support Community yet, keep this invitation and return after updating.</p>
+<noscript><p>To open this invitation, enable JavaScript in your browser and reload this page.</p></noscript>
+<footer><a href="/community/privacy/">Community privacy</a> · <a href="/community/rules/">Community rules</a> · <a href="mailto:rallyai.app@gmail.com">Support</a></footer>
+</main><script>"use strict";
+(() => {
+  if (window.location.search !== "" || window.location.hash !== "") return;
+  const match = /^\/(profile|post)\/([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})$/.exec(window.location.pathname);
+  if (!match) return;
+  const kind = match[1];
+  const id = match[2].toLowerCase();
+  const open = document.getElementById("open-rally");
+  open.href = "rally://" + kind + "/" + id;
+  open.hidden = false;
+  document.getElementById("heading").textContent = "See you on Rally";
+  document.getElementById("message").textContent = "A Rally " + kind + " has been shared with you.";
+  document.getElementById("invitation-note").hidden = false;
+})();</script></body></html>

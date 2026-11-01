@@ -1,0 +1,21 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "T974885TA6.com.rally.tennisdoctor"
+        ],
+        "components": [
+          {
+            "/": "/profile/*",
+            "comment": "Rally profile invitations; app validates the exact UUID path"
+          },
+          {
+            "/": "/post/*",
+            "comment": "Rally post invitations; app validates the exact UUID path"
+          }
+        ]
+      }
+    ]
+  }
+}
