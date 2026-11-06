@@ -1,0 +1,22 @@
+/* Real Rally captures in the overlapping-device composition selected by the owner. */
+.header{height:76px}.nav-download{border-radius:12px}
+.hero{width:min(1140px,calc(100% - 80px));grid-template-columns:1.05fr 1fr;gap:30px;min-height:690px;padding-top:48px;padding-bottom:48px}
+.hero h1{font-size:60px;line-height:1.2;letter-spacing:-2.5px;font-weight:750;margin-bottom:29px;white-space:nowrap}
+.hero-description{font-size:18px;line-height:1.55;max-width:490px;margin-bottom:30px}
+.hero-actions{gap:25px}.hero .store-button{min-height:54px;border-radius:9px}
+.hero-note{border-top:1px solid var(--line);padding-top:23px;margin-top:28px;font-size:12px;line-height:1.9;max-width:470px}.hero-note strong{font-size:16px;color:var(--ink);font-weight:600}
+.logging-devices{position:relative;isolation:isolate;height:590px;width:100%;margin:0}
+.logging-phone{position:absolute;overflow:hidden;background:#f9faff;border:7px solid #141414;border-radius:42px;box-shadow:0 0 0 2px #92969a,0 0 0 4px #e2e3e4,0 14px 18px #18253615}
+.logging-phone img{width:100%;height:auto;display:block}.entry-phone{width:275px;top:0;left:58px;z-index:2}.calendar-phone{width:252px;top:51px;right:4px;transform:perspective(950px) rotateY(-23deg) rotateZ(-2deg);transform-origin:left center;z-index:1}
+.logging-float{position:absolute;left:12px;top:412px;width:328px;z-index:3;border-radius:18px;box-shadow:0 12px 24px #132d4920;border:1px solid #e0e7ef;background:white}
+.logging-devices figcaption{position:absolute;bottom:0;left:0;width:100%;text-align:center;font-size:10px;color:var(--muted)}
+.demo-section{display:grid;grid-template-columns:1fr 1fr;gap:110px;align-items:center;border-top:1px solid var(--line)}.demo-section .hero-demo{max-width:360px;margin-inline:auto;justify-self:center}.demo-section h2{margin-bottom:24px}
+@media(max-width:1100px){.hero{width:calc(100% - 64px);gap:24px;min-height:600px}.hero h1{font-size:48px;letter-spacing:-2px}.logging-devices{height:500px}.entry-phone{width:230px;left:24px}.calendar-phone{width:212px;top:45px;right:0}.logging-float{width:275px;left:0;top:345px}.hero-description{font-size:17px}.demo-section{gap:60px}}
+@media(max-width:850px){.hero{grid-template-columns:1fr 1fr;gap:22px;padding-block:42px;min-height:540px}.hero h1{font-size:38px;letter-spacing:-1.6px}.hero-description{font-size:16px}.logging-devices{height:430px}.entry-phone{width:194px;left:4px;border-radius:31px;border-width:5px}.calendar-phone{width:178px;top:36px;border-radius:29px;border-width:5px;right:-6px}.logging-float{width:224px;top:291px;left:-8px;border-radius:12px}.hero-note{font-size:10px}.hero-note strong{font-size:14px}.hero-actions{gap:15px}.demo-section{gap:35px}}
+@media(max-width:620px){.header{height:72px}.hero{width:calc(100% - 40px);grid-template-columns:1fr;gap:35px;padding-top:39px;padding-bottom:36px;text-align:left}.hero h1{font-size:clamp(33px,9.6vw,56px);line-height:1.22;letter-spacing:-1.4px;margin-bottom:22px}.hero-description{font-size:17px;max-width:400px}.hero-actions{justify-content:flex-start;gap:18px}.hero-note{margin-top:24px;padding-top:18px;font-size:11px}.hero-note strong{font-size:15px}.logging-devices{width:350px;max-width:100%;height:480px;margin-inline:auto}.entry-phone{width:222px;left:33px;border-radius:35px;border-width:6px}.calendar-phone{width:199px;right:0;top:43px;border-radius:33px;border-width:6px}.logging-float{width:270px;left:0;top:333px}.demo-section{grid-template-columns:1fr;gap:32px}.demo-section .hero-demo{max-width:350px}.demo-section h2{font-size:36px}}
+.hero-actions{flex-direction:row}
+.hero-watch{position:absolute;z-index:4;width:245px;max-width:none;height:auto;left:-65px;bottom:24px;pointer-events:none}
+@media(max-width:1100px){.hero-watch{width:210px;left:-59px;bottom:20px}}
+@media(max-width:850px){.hero-watch{width:175px;left:-44px;bottom:20px}}
+@media(max-width:620px){.hero-watch{width:195px;left:-35px;bottom:20px}}
+@media(max-width:620px){.hero-actions{flex-wrap:wrap;justify-content:flex-start;align-items:center;gap:16px}.hero-actions .store-button{width:auto;padding:9px 14px}.hero-actions .store-button strong{font-size:21px}.hero-actions .text-link{font-size:12px;gap:7px}.hero-actions .text-link span{font-size:18px}}
