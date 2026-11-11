@@ -1,0 +1,232 @@
+body {
+  --ink: #151820;
+  --muted: #555d69;
+  --line: #e4e7ed;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.home-header {
+  height: 76px;
+  border-bottom: 0;
+}
+
+.home-header .brand { gap: 4px; }
+.home-header .brand img { width: 30px; }
+.home-header .nav-download {
+  min-height: 42px;
+  padding-inline: 18px;
+  background: var(--ink);
+  white-space: nowrap;
+}
+
+.home-header .nav-download:hover,
+.home-intro .store-button:hover,
+.home-closing .store-button:hover { background: #303b50; }
+
+.home-hero { padding: 62px 20px 0; }
+
+.home-intro {
+  max-width: 840px;
+  margin: 0 auto 38px;
+  text-align: center;
+}
+
+.home-intro h1 {
+  margin: 0 0 20px;
+  font-size: clamp(48px, 6.5vw, 94px);
+  line-height: .99;
+  letter-spacing: -.072em;
+}
+
+.home-intro p,
+.home-section-heading > p,
+.home-closing p {
+  max-width: 520px;
+  margin: 0 auto 24px;
+  color: var(--muted);
+  font-size: clamp(16px, 1.55vw, 19px);
+  line-height: 1.55;
+}
+
+.home-intro .store-button,
+.home-closing .store-button {
+  min-height: 48px;
+  padding: 9px 16px;
+  border-radius: 12px;
+}
+
+.home-intro .store-button strong,
+.home-closing .store-button strong { font-size: 19px; }
+
+.home-intro .store-button svg,
+.home-closing .store-button svg { width: 23px; height: 27px; }
+
+.home-product {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  max-width: 1352px;
+  height: clamp(410px, 46vw, 590px);
+  margin: 0 auto;
+  border-radius: 30px;
+  background:
+    radial-gradient(ellipse at 24% 60%, #fff 0%, transparent 52%),
+    radial-gradient(ellipse at 70% 18%, #f3f8ff 0%, transparent 54%),
+    linear-gradient(145deg, #d9e9fa 4%, #accbe9 69%, #7fa6d4 100%);
+}
+
+.home-phone {
+  overflow: hidden;
+  border: 6px solid #181b22;
+  border-radius: 34px;
+  background: white;
+  box-shadow: 0 0 0 1px #bac3d1, 0 20px 48px #142c5330;
+}
+
+.home-phone img { width: 100%; height: auto; }
+
+.home-product-phone {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: clamp(230px, 27vw, 325px);
+  transform: translateX(-50%);
+}
+
+.home-product-card,
+.home-product-watch { position: absolute; height: auto; }
+
+.home-product-card {
+  z-index: 1;
+  left: calc(50% - clamp(235px, 28vw, 380px));
+  bottom: 13%;
+  width: clamp(185px, 24vw, 300px);
+}
+
+.court-summary {
+  width: 100%;
+  height: auto;
+  clip-path: inset(1% .7% 1.9% round 6.4% / 14.6%);
+}
+
+.court-summary-shadow { filter: drop-shadow(0 20px 28px #19355a38); }
+
+.home-product-watch {
+  z-index: 2;
+  left: calc(50% + clamp(52px, 8vw, 108px));
+  bottom: -5%;
+  width: clamp(265px, 32vw, 430px);
+}
+
+.home-devices {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px 23px;
+  padding: 28px 20px 0;
+  font-size: 16px;
+}
+
+.home-devices span { color: var(--muted); font-size: 14px; }
+.home-devices strong { font-weight: 650; }
+
+.home-gallery-section { padding-top: clamp(70px, 9vw, 130px); }
+.home-section-heading { text-align: center; }
+
+.home-section-heading h2,
+.home-closing h2 {
+  margin: 0 0 14px;
+  font-size: clamp(34px, 4.5vw, 64px);
+  line-height: 1.03;
+  letter-spacing: -.06em;
+}
+
+.home-gallery {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: clamp(180px, 20vw, 280px);
+  justify-content: safe center;
+  gap: 14px;
+  padding: 0 20px 12px;
+  overflow-x: auto;
+  scroll-padding-inline: 20px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+}
+
+.home-gallery-item {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr);
+  place-items: center;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  margin: 0;
+  border-radius: 20px;
+  scroll-snap-align: start;
+}
+
+.home-gallery-item img { width: 100%; height: auto; }
+.gallery-swing { background: #203342; }
+.gallery-swing img { height: 100%; object-fit: cover; }
+.gallery-log { background: #eaf2ff; padding: 18px 25px 0; }
+.gallery-log img { align-self: start; border-radius: 20px; }
+.gallery-watch { background: #eef1f6; }
+.gallery-motion { background: #dfeef2; padding: 16px; }
+.gallery-motion img { border-radius: 14px; }
+.gallery-stats { background: #e9edf7; padding: 18px; }
+
+.home-features { padding-top: clamp(60px, 8vw, 112px); }
+.home-features .swing-feature { margin-top: clamp(42px, 6vw, 88px); border-bottom: 0; }
+.home-features .swing-intro > p { margin-bottom: 34px; }
+
+.home-closing {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  align-items: center;
+  overflow: hidden;
+  min-height: 390px;
+  margin-bottom: 64px;
+  padding: 35px 0 35px clamp(35px, 6vw, 85px);
+  border-radius: 28px;
+  background: linear-gradient(130deg, #edf3fc 25%, #c2d9f2);
+}
+
+.home-closing p { margin-left: 0; }
+.home-closing img { width: min(100%, 475px); margin-inline: auto; }
+
+.home-footer-top {
+  display: grid;
+  grid-template-columns: minmax(165px, 1fr) 2fr;
+  align-items: start;
+  gap: 28px;
+  padding-bottom: 36px;
+}
+
+.home-footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.home-footer-links div { display: grid; align-content: start; gap: 10px; font-size: 14px; }
+.home-footer-links a { color: var(--muted); }
+.home-footer-links a:hover { color: var(--blue); }
+
+@media (max-width: 620px) {
+  .home-header { height: 64px; }
+  .home-header #navigation { top: 64px; }
+  .home-header .nav-download { min-height: 38px; padding-inline: 12px; }
+  .home-hero { padding: 44px 14px 0; }
+  .home-intro { margin-bottom: 28px; padding-inline: 8px; }
+  .home-intro h1 { font-size: clamp(36px, 10.3vw, 58px); letter-spacing: -.061em; }
+  .home-product { height: clamp(330px, 87vw, 430px); border-radius: 22px; }
+  .home-product-phone { top: 9%; width: clamp(155px, 52vw, 235px); border-width: 4px; border-radius: 23px; }
+  .home-product-card { left: 6%; bottom: 12%; width: 45%; }
+  .home-product-watch { left: 50%; bottom: -6%; width: 55%; }
+  .home-closing { grid-template-columns: 1fr; padding: 36px 22px 0; text-align: center; }
+  .home-closing p { margin-inline: auto; }
+  .home-closing img { width: min(78%, 290px); margin-top: 12px; margin-bottom: -38px; }
+  .home-footer-top { grid-template-columns: 1fr; }
+  .home-footer-links { gap: 12px; }
+}
